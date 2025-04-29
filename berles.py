@@ -73,9 +73,10 @@ def auto_berlese(valasztott):
     uj_berles = Berles(valasztott, napok_szama, berles_datum_str, azonosito)
     berlesek.append(uj_berles)
 
-    print(f"Sikeres bérlés! Azonosítód: {azonosito}")
-    print(f"Rendszám: {valasztott.rendszam}")
-    print(f"Bérlés összege: {uj_berles.osszeg()} Ft")
+    print(f"Sikeres bérlés!")
+    print(f"  Azonosítód: {azonosito}")
+    print(f"  Rendszám: {valasztott.rendszam}")
+    print(f"  Bérlés összege: {uj_berles.osszeg()} Ft")
 
 
 def elerheto_autok():
