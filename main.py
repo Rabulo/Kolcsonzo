@@ -11,13 +11,13 @@ def menu():
         print("4. Bérlések listázása")
         print("5. Kilépés")
 
-        valasztas = input("Válassz egy lehetőséget (1-5): ")
+        valasztas = input("Válasszon egy lehetőséget (1-5): ")
 
         if valasztas == "1":
             auto_kolcsonzo.listaz_autok()
 
         elif valasztas == "2":
-            print("\nMilyen típusú autót szeretnél bérelni?")
+            print("\nMilyen típusú autót szeretne bérelni?")
 
             print("1. Személyautó")
 
@@ -40,7 +40,7 @@ def menu():
                     for auto in szemelyautok:
                         print(auto.info())
 
-                    rendszam = input("Írd be a kiválasztott autó rendszámát: ").strip().upper()
+                    rendszam = input("Írja be a kiválasztott autó rendszámát: ").strip().upper()
 
                     valasztott = next((a for a in szemelyautok if a.rendszam == rendszam), None)
 
@@ -85,7 +85,7 @@ def menu():
         elif valasztas == "4":
             eddigi_berlesek()
         elif valasztas == "5":
-            print("\nKilépés a programból. Köszönjük, hogy minket választottál!")
+            print("\nKilépés. Köszönjük, hogy minket választottál!")
             break
         else:
             print("Hibás választás, próbáld újra!")

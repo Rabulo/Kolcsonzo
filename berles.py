@@ -30,6 +30,7 @@ berlesek = [
     Berles(auto1, 3, "2023.10.01", "bZ1"),
     Berles(auto2, 10, "2023.10.05", "bZ2"),
     Berles(auto3, 5, "2023.10.10", "bz3"),
+    Berles(auto1, 2, "2023.10.15", "bZ4"),
 ]
 
 
@@ -39,7 +40,7 @@ def eddigi_berlesek():
     for i, berles in enumerate(berlesek, 1):
         print(
             f"{i}. {berles.auto.tipus} ({berles.auto.rendszam}) - {berles.napok_szama}"
-            f" nap - Összeg: {berles.osszeg()}  Ft")
+            f" nap - Összeg: {berles.osszeg()} Ft")
 
 
 def auto_berlese(valasztott):
